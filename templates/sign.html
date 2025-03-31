@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> My login page</title>
+	<link href="/static/staticcss/sign.css" rel="stylesheet">
+	
+</head>
+<body> 
+	<a href="/login"><img id="arrow" src="/static/assets/left.png" width="20px" height="15px" margin-top="10px" margin-left="10px"></a><br><br>
+	<br>
+<div class="maindiv">
+	<h1>Sign-in</h1><br>
+			<img id="imglog" src="/static/assets/user.png" width="200" height="175"><br><br>
+	<form  method="post" >
+		{%csrf_token%}
+		<input id="com"  type="file" placeholder="Add Image" name="image" ><br>
+		<input id="com"  type="text" name="name" placeholder=" Name" required><br>
+		<p id="gen">Gender:  Male <input id="gender"  type="radio" name="gender" placeholder=" Gender" value="Male" required>Female
+		<input id="gender"  type="radio" name="gender" placeholder=" Gender" value="Female" required></p>
+		<input id="com"  type="text" name="phone" placeholder=" Phone" required>
+		<input id="otp"  type="submit" value="Send OTP" ><br>
+		<input id="com"  type="text" name="otp" placeholder="Enter OTP" required><br>
+		<input id="com"  type="text" name="mail" placeholder=" E-mail" required><br>
+		<input id="com"  type="text" name="passw" placeholder=" Password" required><br>
+		<input id="com"  type="text" name="rpass" placeholder=" Re-enter Password" require><br><br>
+
+	<input type="submit" id="sign" value="  Sign-In   "  name="sign" ><br>
+ </form> 
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link href="/static/staticcss/home.css" rel="stylesheet">
+  <link href="/static/staticcss/langpages.css" rel="stylesheet">
+	
+</head>
+<body>
+	<img id="logo" class="logo" src="/static/assets/logo.png">
+	<br>
+	<a href="/login"><img id="account" src="/static/assets/account.png"></a>
+	{% include 'header.html' %} 
+	<div class="main1">
+<div class="ma" id="di1" style="background-image: url({{dat.crausal1}});"></div>
+<div class="ma" id="di2"  style="background-image: url({{dat.crausal2}});"></div>
+<div class="ma" id="di3"  style="background-image: url({{dat.crausal3}});"></div>
+<div class="ma" id="di4"  style="background-image: url({{dat.crausal4}});"></div>
+<div class="ma" id="di5"  style="background-image: url({{dat.crausal5}});"></div>
+</div>
+<br>
+
+<br>
+{% comment %} <div class="main">
+	<div id="d1"><img class="imagepos" id="imgposition" src="{{d1.movieimagelink}}"><center id="title">{{d1.moviename}}<br>480p/720p/1080p<br>Download:</center> 
+		<a href="{{d1.link1}}"><button id="bp1" type="button" onclick="#">480p</button></a>
+		<a href="{{d1.link2}}"><button id="bp" type="button" onclick="#">720p</button></a>
+		<a href="{{d1.link3}}"><button id="bp" type="button" onclick="#">1080p</button></a>
+	</div>
+	<div id="d2"><img class="imagepos" id="imgposition" src="{{d2.movieimagelink}}"><center id="title">{{d2.moviename}}<br>480p/720p/1080p<br>Download:</center> 
+		<a href="{{d2.link1}}"><button id="bp1" type="button" onclick="#">480p</button></a>
+		<a href="{{d2.link2}}"><button id="bp" type="button" onclick="#">720p</button></a>
+		<a href="{{d2.link3}}"><button id="bp" type="button" onclick="#">1080p</button></a>
+	</div>
+	<div id="d3"><img class="imagepos" id="imgposition" src="{{d3.movieimagelink}}"><center id="title">{{d3.moviename}}<br>480p/720p/1080p<br>Download:</center> 
+		<a href="{{d3.link1}}"><button id="bp1" type="button" onclick="#">480p</button></a>
+		<a href="{{d3.link2}}"><button id="bp" type="button" onclick="#">720p</button></a>
+		<a href="{{d3.link3}}"><button id="bp" type="button" onclick="#">1080p</button></a>
+	</div>
+	<div id="d4"><img class="imagepos" id="imgposition" src="{{d4.movieimagelink}}"><center id="title">{{d4.moviename}}<br>480p/720p/1080p<br>Download:</center> 
+		<a href="{{d4.link1}}"><button id="bp1" type="button" onclick="#">480p</button></a>
+		<a href="{{d4.link2}}"><button id="bp" type="button" onclick="#">720p</button></a>
+		<a href="{{d4.link3}}"><button id="bp" type="button" onclick="#">1080p</button></a>
+	</div>
+</div>	 {% endcomment %}
+<br>
+<br>
+{% for i in data %}
+<a href="{%  url "movie" i.unique  %}">
+    <div id="main" style="border:solid 2px #FADE42;  height: 400px; margin-top: 5px;">
+      <img id="imageborder" src="{{ i.movieimagelink }}" height="300px" width="200px" alt="Card image cap">
+      <div id="des">
+        <h4>{{ i.moviename }}</h4>
+        <p><span style="color:red;">Rating:</span> {{ i.rating }}</p>
+        <p><span style="color:red;">Language:</span> {{ i.english }} {{ i.hindi }} {{ i.south }} {{ i.marathi }}</p>
+        <p><span style="color:red;">Type:</span> <small>{{ i.action }} {{ i.comedy }} {{ i.drama }} {{ i.adventure }} {{ i.romantic }}</small></p>
+        <p><span style="color:red;">Director:</span> {{ i.director }}</p>
+        <p><span style="color:red;">Actors:</span><br>{{ i.actors }}</p>
+      </div>
+    </div></a>
+<br>		
+<br>
+{%endfor%}
+{% include 'footer.html' %} 
+		
+</body>
+</html>

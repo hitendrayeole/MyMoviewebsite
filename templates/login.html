@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title> My login page</title>
+	<link href="/static/staticcss/login.css" rel="stylesheet">
+</head>
+<body>
+
+	<br>
+		<div class="log">
+			<h1>Login</h1><br>
+			<img id="imglog"src="/static/assets/user.png" width="150" height="150"><br>
+ <form action="" method="post" >
+	{%csrf_token%}
+
+		<input type="text" id="mail" name="mail" placeholder="E-mail" required><br>
+		<input type="password" id="pass" name="pass" placeholder="Password" required><br><br>
+		<center id="for">Forgot <a id="a1" href="#"> password? </a><br><br>
+		<input type="checkbox"name="rem" placeholder="Remember me" >Remember me<br><br></center>
+
+	<input type="submit" id="login" value="   Login   "  name="login"><br>
+	<p id="p1">Create a new account <a id="a1" href="/sign" > Sign-in</a></p>
+ </form> 
+</div>
+<br>
+</body>
+</html>

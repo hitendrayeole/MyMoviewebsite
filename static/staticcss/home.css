@@ -1,0 +1,186 @@
+body{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.logo{
+    
+        margin-left: 650px;
+        height: 75px;
+        width: 200px;
+      }
+#account{
+        margin-left: 1400px;
+        height: 50px;
+        width: 90px;
+        }
+
+#main{
+                width: 1500px;
+                margin-left: 30px;
+        }
+#submain{
+                height: 300px;
+                width: 1500px;
+                margin-right: 50px;
+                border: solid 2px gold;
+        }
+#imageborder{
+                width: 248px;
+                 border: solid 1px gold;
+        }
+
+h4{
+        color: rgb(35, 215, 255);
+        font-family: sans-serif;
+        margin-left: 10px;
+        text-decoration: none; 
+}
+p{
+        color: rgb(198, 198, 198);
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-left: 10px;
+}
+.ma
+{
+    height: 400px;
+    width: 300px;
+    color: black;
+    background-color: black;
+    
+}
+.main1{
+    background-color: rgb(0, 0, 0);
+    margin-top: 13px;
+    margin-left: 5px ;
+    width: 1500px;
+    display: flex;
+}
+#di1{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+}
+#di2{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 5px;
+
+}
+#di3{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 5px;
+
+}
+#di4{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 5px;
+
+}
+#di5{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 5px;
+}
+
+
+.main{
+display: flex;
+}
+#d1{
+margin-top: 50px;
+margin-left: 125px;
+width: 200px;
+height: 310px;
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+border:solid 5px #FADE42;
+
+}
+
+#d2{
+margin-top: 50px;
+margin-left: 150px;
+width: 200px;
+height: 310px;
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+border:solid 5px #FADE42;
+
+}
+
+#d3{
+margin-top: 50px;
+margin-left: 150px;
+width: 200px;
+height: 310px;
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+border:solid 5px #FADE42;
+
+}
+
+
+#d4{
+margin-top: 50px;
+margin-left: 150px;
+width: 200px;
+height: 310px;
+background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+border:solid 5px #FADE42;
+}
+
+#imgposition{
+height: 200px;
+width: 150px;
+margin-top: 15px;
+margin-left: 25px;
+}
+#title{
+margin-top: 5px;
+color: white;
+font-family: monospace;
+}	
+#bp1{
+margin-left: 25px;
+color: white;
+margin-top: 10px;
+background-color: #1e90ff ;
+}
+#bp1:hover{
+background-color: #0000ff ;
+}
+#bp{	
+color: white;
+margin-top: 10px;
+background-color: #1e90ff ;
+}
+#bp:hover{
+background-color: #0000ff ;}  
+
+
+@media(max-width: 900px ){
+        .logo{
+        
+                width: 350px;
+                height: 100px;
+              }
+         #account{
+                margin-left: 1300px;
+                height: 70px;
+                width: 150px;
+                }
+                
+         .imagepos{
+                        height: 200px;
+                        width: 150px;
+                        margin-top: 15px;
+                        margin-left: 10px;
+                }
+}

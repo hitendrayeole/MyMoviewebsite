@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>English</title>
+	<link href="/static/staticcss/langpages.css" rel="stylesheet">
+</head>
+<body>
+	{% include 'header.html' %}
+
+	{% for i in data reversed %}
+		{% if i.english == 'English' %}
+		<a href="{%  url "movie" i.unique  %}">
+			<div id="main">
+				<img id="imageborder" src="{{ i.movieimagelink }}" height="300px" width="170px" alt="Card image cap">
+				<div id="des">
+					<h4>{{ i.moviename }}</h4>
+					<p><span style="color:red;">Rating:</span> {{ i.rating }}</p>
+					<p><span style="color:red;">Language:</span> {{ i.english }} {{ i.hindi }} {{ i.south }} {{ i.marathi }}</p>
+					<p><span style="color:red;">Type:</span> <small>{{ i.action }} {{ i.comedy }} {{ i.drama }} {{ i.adventure }} {{ i.romantic }}</small></p>
+					<p><span style="color:red;">Director:</span> {{ i.director }}</p>
+					<p><span style="color:red;">Actors:</span><br>{{ i.actors }}</p>
+				</div>
+			</div></a>
+			<br><br>
+		{% endif %}
+	{% endfor %}
+
+	{% include 'footer.html' %}
+</body>
+</html>

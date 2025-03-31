@@ -1,0 +1,104 @@
+
+body{
+	background-image: url('/static/logbackground.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+}
+.maindiv{
+			width: 400px;
+			height: 650px;
+			background-color: black;
+			margin-left: 150px;
+			margin-top: 25px;
+			opacity: 0.7;
+			border:solid 2px #FADE42;
+			border-radius: 20px 20px;
+		}
+
+		h1{
+			margin-top: 10;
+			color: #FADE42;
+			text-align: center;
+			font-family: Garamond ;
+			text-decoration: none;
+		}
+		#imglog{
+			margin-top: -20;
+			margin-left: 125px;
+		}
+		#com{
+			color: white;
+			 	 margin-left: 100px;
+				padding: 8px;
+				border-top-style: none;
+				border-left-style: none;
+				border-right-style: none;
+				border-bottom-color: #FADE42;
+				background-color: transparent;
+				
+		}
+		#com:hover{
+			color: 	#FADE42;
+		}
+
+		#gen{
+			font-family: monospace ;
+			font-size: 14px;
+			margin-left: 75px;
+			color: white;
+		}
+
+		#gen:hover{
+			color: 	#FADE42;
+		}
+		
+		#sign{
+			font-size: 15px;
+			font: bold;
+			border-radius: 35px 35px;
+			border: none;
+			background-color: #00ff00;
+			margin-left: 150px;
+			height: 30px;
+			width: 100px;
+		}
+		#sign:hover{
+			background-color: #32cd32;
+			color: #FADE42;
+		}
+		#otp{
+			color: white;
+			font-size: 11px;
+			font: bold;
+			border-radius: 35px 35px;
+			border: none;
+			background-color: #ff0800;
+			margin-top: 10px;
+			margin-left: 5px;
+			height: 20px;
+			width: 70px;
+		}
+		#otp:hover{
+			color: #FADE42;
+		}
+
+				
+ul li{
+	display: inline;
+	padding-left: 5px;
+	font-size: 23px;
+	line-height: 20px;
+
+}
+ul li a:hover{
+	color: 	#FADE42;
+}
+ul li a{
+	margin-right: 30px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+
+}

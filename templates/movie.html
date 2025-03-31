@@ -1,0 +1,30 @@
+<html>
+<head>
+
+	<title>Movie</title>
+	<link href="/static/staticcss/langpages.css" rel="stylesheet">
+</head>
+<body>
+	{% include 'header.html' %}
+
+		
+				<img id="image" src="{{movie.movieimagelink}}" height="400px" width="300px" >
+		
+					<center><h4>{{ movie.moviename }}</h4></center><br><hr color="gold">
+					<p><span style="color:red;">Rating : </span> {{ movie.rating }}</p>
+					<p><span style="color:red;">Language : </span> {{ movie.english }} {{ movie.hindi }} {{ movie.south }} {{ movie.marathi }}</p>
+					<p><span style="color:red;">Type : </span> <small>{{ movie.action }} {{ movie.comedy }} {{ movie.drama }} {{ movie.adventure }} {{ movie.romantic }}</small></p>
+					<p><span style="color:red;">Director : </span> {{ movie.director }}</p>
+					<p><span style="color:red;">Actors : </span>{{ movie.actors }}</p>
+                    <p><span style="color:red;">Release Date : </span>{{ movie.moviedate }}</p>
+                    <p><span style="color:red;">Description : </span>{{ movie.description }}</p>
+                    <form action="/" ><hr color="gold">
+                  <a href="{{movie.link1}}"><button type="submit" id="dowbutton"  name="link1" >Download 480p </a></button>
+                  <a href="{{movie.link2}}"><button type="submit" id="dowbutton"   name="link2" >Download 720p </a></button>
+                  <a href="{{movie.link4}}"><button type="submit" id="dowbutton"   name="link4" >Download 1080p  </a></button>
+                  <br><br>
+                  <hr color="gold"> </form>
+			<br><br>
+            {% include 'footer.html' %} 
+</body>
+</html>
